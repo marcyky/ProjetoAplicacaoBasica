@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles_login.css" />
+  <title>Página de Login</title>
+</head>
+
+<body>
+  
+  <div class="container">
+      <div class="col col-img">
+        <img src="img/img_computer_login.png" id="featured-image" class="img-login" alt="Ilustração tela de login" />
+      </div>
+      <div class="col" id="col-form">
+        <div class="box-form" id="div-login">
+          <h2 class="title">
+            <span>Restic36</span>
+          </h2>
+          <h1 class="subtitle">Faça o login</h1>
+		  <br>
+          <form id="form-login" onsubmit="login(event)" >
+            <input type="text" id="username" placeholder="Usuário" required />
+            <input  type="password" id="password" placeholder="Senha" required />
+
+            <button type="submit" class="btn-submit" id="login-button">Entrar</button>
+			<p id="error-message"></p>
+          </form>
+        </div>
+      </div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
